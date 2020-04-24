@@ -264,10 +264,52 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../markdown_syntax/" title="Markdown语法" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
       Markdown语法
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Markdown语法" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+        </span>
+        Markdown语法
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../assets/markdown_syntax/" title="基本语法" class="md-nav__link">
+      基本语法
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../assets/markdown_syntax/emoji/" title="emoji图标" class="md-nav__link">
+      emoji图标
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -366,7 +408,8 @@
                   
                 
                 
-                <h1 id="_1">创世项目文档<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+                <h1 id="_1">创世项目文档管理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p><em>添加中文支持和图片放大显示参考<a href="https://segmentfault.com/a/1190000018592279?utm_source=tag-newest">基于mkdocs-material实现的帮助中心(markdown + 中文搜索 + 图片放大)</a></em>修复部分原文错误</p>
 <h3 id="_2">准备<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://desktop.github.com">下载</a>安装Github Desktop</li>
@@ -422,6 +465,11 @@
                 <span class="n">log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s1">&#39;Failed to pre-build search index. Error: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
 
         <span class="k">return</span> <span class="n">data</span>
+</code></pre></div>
+
+
+<div class="codehilite"><pre><span></span><code><span class="c1"># 在文件开始位置插入import语句</span>
+<span class="kn">import</span> <span class="nn">jieba</span>
 </code></pre></div>
 
 
@@ -488,13 +536,13 @@
       <nav class="md-footer-nav__inner md-grid" aria-label="">
         
         
-          <a href="../markdown_syntax/" title="Markdown语法" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../assets/markdown_syntax/" title="基本语法" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   下一页
                 </span>
-                Markdown语法
+                基本语法
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
