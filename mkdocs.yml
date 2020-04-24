@@ -4,9 +4,6 @@ site_name: 亚鹿项目手册
 site_author: 亚鹿信息
 copyright: 版权所有 © [亚鹿信息](https://yaluoo.com)
 
-#repo_name: docs-guides
-repo_url: https://github.com/Yaluoo/docs-guides.git
-
 theme: 
     name: 'material'
     language: 'zh'
