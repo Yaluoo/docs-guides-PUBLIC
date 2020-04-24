@@ -466,22 +466,18 @@
 
 
 <h4 id="2">语法2<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
-<p>使用一对各三个的反引号：</p>
-<div class="codehilite"><pre><span></span><code>欢迎到访
+<p>使用一对各三个的反引号：
+<div class="highlight"><pre><span></span><code>欢迎到访
 我是C++码农
 你可以在知乎、CSDN、简书搜索【果冻虾仁】找到我
 </code></pre></div>
-
-
-<p>该语法也可以实现代码高亮，见<a href="#代码高亮">代码高亮</a></p>
+该语法也可以实现代码高亮，见<a href="#代码高亮">代码高亮</a></p>
 <h3 id="_15">文字高亮<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
 <p>文字高亮功能能使行内部分文字高亮，使用一对反引号。
-语法：</p>
-<div class="codehilite"><pre><span></span><code>`linux` `网络编程` `socket` `epoll` 
+语法：
+<div class="highlight"><pre><span></span><code>`linux` `网络编程` `socket` `epoll` 
 </code></pre></div>
-
-
-<p>效果：<code>linux</code> <code>网络编程</code> <code>socket</code> <code>epoll</code></p>
+效果：<code>linux</code> <code>网络编程</code> <code>socket</code> <code>epoll</code></p>
 <p>也适合做一篇文章的tag</p>
 <h4 id="_16">换行<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h4>
 <p>直接回车不能换行，<br />
@@ -516,7 +512,7 @@
 </tr>
 <tr>
 <td><code>这是一个 ~~删除线~~</code></td>
-<td>这是一个 ~~删除线~~</td>
+<td>这是一个 <del>删除线</del></td>
 </tr>
 <tr>
 <td><code>***斜粗体1***</code></td>
@@ -528,11 +524,11 @@
 </tr>
 <tr>
 <td><code>***~~斜粗体删除线1~~***</code></td>
-<td><strong><em>~~斜粗体删除线1~~</em></strong></td>
+<td><strong><em><del>斜粗体删除线1</del></em></strong></td>
 </tr>
 <tr>
 <td><code>~~***斜粗体删除线2***~~</code></td>
-<td>~~<strong><em>斜粗体删除线2</em></strong>~~</td>
+<td><del><strong><em>斜粗体删除线2</em></strong></del></td>
 </tr>
 </tbody>
 </table>
@@ -541,19 +537,15 @@
 
 
 <h2 id="_18">图片<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
-<p>基本格式：</p>
-<div class="codehilite"><pre><span></span><code>![alt](URL title)
+<p>基本格式：
+<div class="highlight"><pre><span></span><code>![alt](URL title)
 </code></pre></div>
-
-
-<p>alt和title即对应HTML中的alt和title属性（都可省略）：
+alt和title即对应HTML中的alt和title属性（都可省略）：
 - alt表示图片显示失败时的替换文本
 - title表示鼠标悬停在图片时的显示文本（注意这里要加引号）</p>
-<p>URL即图片的url地址，如果引用本仓库中的图片，直接使用<strong>相对路径</strong>就可了，如果引用其他github仓库中的图片要注意格式，即：<code>仓库地址/raw/分支名/图片路径</code>，如：</p>
-<div class="codehilite"><pre><span></span><code>https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
-</code></pre></div>
-
-
+<p>URL即图片的url地址，如果引用本仓库中的图片，直接使用**相对路径**就可了，如果引用其他github仓库中的图片要注意格式，即：<code>仓库地址/raw/分支名/图片路径</code>，如：
+<div class="highlight"><pre><span></span><code>https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
+</code></pre></div></p>
 <table>
 <thead>
 <tr>
@@ -575,14 +567,12 @@
 </tr>
 </tbody>
 </table>
-<p>注意例2的写法使用了<strong>URL标识符</strong>的形式，在<a href="#链接">链接</a>一节有介绍。</p>
+<p>注意例2的写法使用了**URL标识符**的形式，在<a href="#链接">链接</a>一节有介绍。</p>
 <blockquote>
-<p>在文末有code-past的定义：</p>
+<p>在文末有code-past的定义：
+<div class="highlight"><pre><span></span><code>[code-past]:/img/codepast-logo.jpg &quot;公众号：编程往事&quot;
+</code></pre></div></p>
 </blockquote>
-<div class="codehilite"><pre><span></span><code>[code-past]:/img/codepast-logo.jpg &quot;公众号：编程往事&quot;
-</code></pre></div>
-
-
 <h2 id="_19">链接<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
 <h3 id="url">链接外部URL<a class="headerlink" href="#url" title="Permanent link">&para;</a></h3>
 <table>
@@ -684,18 +674,17 @@
 </tr>
 </tbody>
 </table>
-<p>不过要注意，标题中的英文字母都被转化为<strong>小写字母</strong>了。</p>
+<p>不过要注意，标题中的英文字母都被转化为**小写字母**了。</p>
 <blockquote>
 <p>以前GitHub对中文支持的不好，所以中文标题不能正确识别为锚点，但是现在已经没问题啦！</p>
 </blockquote>
 <h2 id="_22">列表<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h2>
 <h3 id="_23">无序列表<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
 <h4 id="_24">语法<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><code>* 昵称：果冻虾仁
+<div class="highlight"><pre><span></span><code>* 昵称：果冻虾仁
 - 别名：隔壁老王
 * 英文名：Jelly
 </code></pre></div>
-
 
 <h4 id="_25">效果<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h4>
 <ul>
@@ -705,11 +694,10 @@
 </ul>
 <h3 id="_26">多级无序列表<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
 <h4 id="_27">语法<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><code>* 编程语言
+<div class="highlight"><pre><span></span><code>* 编程语言
     * 脚本语言
         * Python
 </code></pre></div>
-
 
 <h4 id="_28">效果<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h4>
 <ul>
@@ -723,15 +711,13 @@
 </ul>
 <h3 id="_29">一级有序列表<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
 <h4 id="_30">语法<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h4>
-<p>就是在数字后面加一个点，再加一个空格。不过看起来起来可能不够明显。 </p>
-<div class="codehilite"><pre><span></span><code>面向对象的三个基本特征：
+<p>就是在数字后面加一个点，再加一个空格。不过看起来起来可能不够明显。 
+<div class="highlight"><pre><span></span><code>面向对象的三个基本特征：
 
 1. 封装
 2. 继承
 3. 多态
-</code></pre></div>
-
-
+</code></pre></div></p>
 <h4 id="_31">效果<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h4>
 <p>面向对象的三个基本特征：</p>
 <ol>
@@ -742,11 +728,10 @@
 <h3 id="_32">多级有序列表<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h3>
 <p>和无序列表一样，有序列表也有多级结构。</p>
 <h4 id="_33">语法<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><code>1. 这是一级的有序列表，数字1还是1
+<div class="highlight"><pre><span></span><code>1. 这是一级的有序列表，数字1还是1
    1. 这是二级的有序列表，阿拉伯数字在显示的时候变成了罗马数字
       1. 这是三级的有序列表，数字在显示的时候变成了英文字母
 </code></pre></div>
-
 
 <h4 id="_34">效果<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h4>
 <ol>
@@ -758,7 +743,7 @@
 </ol>
 <h3 id="_35">复选框列表<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h3>
 <h4 id="_36">语法<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><code>- [x] 需求分析
+<div class="highlight"><pre><span></span><code>- [x] 需求分析
 - [x] 系统设计
 - [x] 详细设计
 - [ ] 编码
@@ -766,21 +751,20 @@
 - [ ] 交付
 </code></pre></div>
 
-
 <h4 id="_37">效果<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h4>
-<ul>
-<li>[x] 需求分析</li>
-<li>[x] 系统设计</li>
-<li>[x] 详细设计</li>
-<li>[ ] 编码</li>
-<li>[ ] 测试</li>
-<li>[ ] 交付</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 需求分析</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 系统设计</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 详细设计</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 编码</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 测试</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 交付</li>
 </ul>
 <p>您可以使用这个功能来标注某个项目各项任务的完成情况。</p>
 <blockquote>
 <p>Tip:</p>
 <blockquote>
-<p>在GitHub的<strong>issue</strong>中使用该语法是可以实时点击复选框来勾选或解除勾选的，而无需修改issue原文。</p>
+<p>在GitHub的**issue**中使用该语法是可以实时点击复选框来勾选或解除勾选的，而无需修改issue原文。</p>
 </blockquote>
 </blockquote>
 <h2 id="_38">块引用<a class="headerlink" href="#_38" title="Permanent link">&para;</a></h2>
@@ -794,13 +778,12 @@
 </blockquote>
 <h3 id="_40">块引用有多级结构<a class="headerlink" href="#_40" title="Permanent link">&para;</a></h3>
 <h4 id="_41">语法<a class="headerlink" href="#_41" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><code>&gt; 数据结构
+<div class="highlight"><pre><span></span><code>&gt; 数据结构
 &gt;&gt; 树
 &gt;&gt;&gt; 二叉树
 &gt;&gt;&gt;&gt; 平衡二叉树
 &gt;&gt;&gt;&gt;&gt; 满二叉树
 </code></pre></div>
-
 
 <h4 id="_42">效果<a class="headerlink" href="#_42" title="Permanent link">&para;</a></h4>
 <blockquote>
@@ -822,27 +805,18 @@
 <h3 id="_44">语法<a class="headerlink" href="#_44" title="Permanent link">&para;</a></h3>
 <p>在三个反引号后面加上编程语言的名字，另起一行开始写代码，最后一行再加上三个反引号。</p>
 <h3 id="_45">效果<a class="headerlink" href="#_45" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="n">args</span><span class="p">){}</span> <span class="c1">//Java</span>
+<p><div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="n">args</span><span class="p">){}</span> <span class="c1">//Java</span>
 </code></pre></div>
-
-
-<div class="codehilite"><pre><span></span><code><span class="kt">int</span> <span class="n">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span> <span class="c1">//C</span>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span> <span class="c1">//C</span>
 </code></pre></div>
-
-
-<div class="codehilite"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;hello GitHub&quot;</span> <span class="c1">#Bash</span>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;hello GitHub&quot;</span> <span class="c1">#Bash</span>
 </code></pre></div>
-
-
-<div class="codehilite"><pre><span></span><code><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;myH1&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="o">=</span><span class="s2">&quot;Welcome to my Homepage&quot;</span><span class="p">;</span> <span class="c1">//javascipt</span>
+<div class="highlight"><pre><span></span><code><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;myH1&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="o">=</span><span class="s2">&quot;Welcome to my Homepage&quot;</span><span class="p">;</span> <span class="c1">//javascipt</span>
 </code></pre></div>
-
-
-<div class="codehilite"><pre><span></span><code><span class="n">string</span> <span class="o">&amp;</span><span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">A</span><span class="p">,</span><span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">B</span><span class="p">)</span> <span class="c1">//cpp</span>
+<div class="highlight"><pre><span></span><code><span class="n">string</span> <span class="o">&amp;</span><span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">A</span><span class="p">,</span><span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">B</span><span class="p">)</span> <span class="c1">//cpp</span>
 </code></pre></div>
-
-
-<h2 id="_46">表格<a class="headerlink" href="#_46" title="Permanent link">&para;</a></h2>
+表格</p>
+<hr />
 <table>
 <thead>
 <tr>
@@ -879,7 +853,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_47">对齐<a class="headerlink" href="#_47" title="Permanent link">&para;</a></h3>
+<h3 id="_46">对齐<a class="headerlink" href="#_46" title="Permanent link">&para;</a></h3>
 <p>表格可以指定对齐方式</p>
 <table>
 <thead>
@@ -907,9 +881,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_48">混合其他语法<a class="headerlink" href="#_48" title="Permanent link">&para;</a></h3>
+<h3 id="_47">混合其他语法<a class="headerlink" href="#_47" title="Permanent link">&para;</a></h3>
 <p>表格单元中的内容可以和其他大多数GFM语法配合使用，如：  </p>
-<h4 id="_49">使用普通文本的删除线，斜体等效果<a class="headerlink" href="#_49" title="Permanent link">&para;</a></h4>
+<h4 id="_48">使用普通文本的删除线，斜体等效果<a class="headerlink" href="#_48" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -920,7 +894,7 @@
 <tbody>
 <tr>
 <td>Help</td>
-<td>~~Display the~~ help window.</td>
+<td><del>Display the</del> help window.</td>
 </tr>
 <tr>
 <td>Close</td>
@@ -928,7 +902,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_50">表格中嵌入图片（链接）<a class="headerlink" href="#_50" title="Permanent link">&para;</a></h4>
+<h4 id="_49">表格中嵌入图片（链接）<a class="headerlink" href="#_49" title="Permanent link">&para;</a></h4>
 <p>其实前面介绍图片显示、图片链接的时候为了清晰就是放在在表格中显示的。</p>
 <table>
 <thead>
@@ -944,25 +918,24 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_51">表情<a class="headerlink" href="#_51" title="Permanent link">&para;</a></h2>
+<h2 id="_50">表情<a class="headerlink" href="#_50" title="Permanent link">&para;</a></h2>
 <p>Github的Markdown语法支持添加emoji表情，输入不同的符号码（两个冒号包围的字符）可以显示出不同的表情。</p>
-<p>比如<code>:blush:</code>，可以显示:blush:。</p>
+<p>比如<code>:blush:</code>，可以显示<img alt="😊" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f60a.svg" title=":blush:" />。</p>
 <p>具体每一个表情的符号码，可以查询GitHub的官方网页<a href="http://www.emoji-cheat-sheet.com">http://www.emoji-cheat-sheet.com</a>。</p>
-<p>但是这个网页每次都打开<strong>奇慢</strong>。。所以我整理到了本repo中，大家可以直接在此查看<a href="emoji/">emoji</a>。</p>
+<p>但是这个网页每次都打开**奇慢**。。所以我整理到了本repo中，大家可以直接在此查看<a href="emoji/">emoji</a>。</p>
 <h2 id="diff">diff语法<a class="headerlink" href="#diff" title="Permanent link">&para;</a></h2>
 <p>版本控制的系统中都少不了diff的功能，即展示一个文件内容的增加与删除。
 GFM中可以显示的展示diff效果。使用绿色表示新增，红色表示删除。</p>
-<h4 id="_52">语法<a class="headerlink" href="#_52" title="Permanent link">&para;</a></h4>
+<h4 id="_51">语法<a class="headerlink" href="#_51" title="Permanent link">&para;</a></h4>
 <p>其语法与代码高亮类似，只是在三个反引号后面写diff，
 并且其内容中，可以用 <code>+</code>开头表示新增，<code>-</code>开头表示删除。
 另外还有有 <code>!</code>和<code>#</code>的语法。</p>
-<h4 id="_53">效果<a class="headerlink" href="#_53" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><code><span class="gi">+ 人闲桂花落，</span>
+<h4 id="_52">效果<a class="headerlink" href="#_52" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="gi">+ 人闲桂花落，</span>
 <span class="gd">- 夜静春山空。</span>
 <span class="gs">! 月出惊山鸟，</span>
 # 时鸣春涧中。
 </code></pre></div>
-
 
 <hr />
                 

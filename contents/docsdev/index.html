@@ -409,13 +409,13 @@
                 
                 
                 <h1 id="_1">创世项目文档管理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p><em>添加中文支持和图片放大显示参考<a href="https://segmentfault.com/a/1190000018592279?utm_source=tag-newest">基于mkdocs-material实现的帮助中心(markdown + 中文搜索 + 图片放大)</a></em>修复部分原文错误</p>
+<p>*添加中文支持和图片放大显示参考<a href="https://segmentfault.com/a/1190000018592279?utm_source=tag-newest">基于mkdocs-material实现的帮助中心(markdown + 中文搜索 + 图片放大)</a>*修复部分原文错误</p>
 <h3 id="_2">准备<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://desktop.github.com">下载</a>安装Github Desktop</li>
 <li><a href="https://www.python.org/downloads">下载</a>安装Python</li>
 <li><a href="https://code.visualstudio.com">下载</a>安装VS Code</li>
-<li>通过 <code>pip install --upgrade pip</code> 更新Python安装工具（Mac OS使用 <code>pip3</code>），如果出现<em>No module named 'pip' error</em>错误，通过命令 <code>python -m ensurepip</code> 修复</li>
+<li>通过 <code>pip install --upgrade pip</code> 更新Python安装工具（Mac OS使用 <code>pip3</code>），如果出现*No module named 'pip' error*错误，通过命令 <code>python -m ensurepip</code> 修复</li>
 <li>使用命令 <code>pip install mkdocs</code> 安装MKDocs</li>
 <li>使用命令 <code>pip install mkdocs-material</code> 安装mkdocs-material</li>
 <li>使用命令 <code>pip install jieba</code> 安装解霸</li>
@@ -424,8 +424,8 @@
 <h5 id="pythonsearch_indexpy">进入python的安装目录修改search_index.py文件<a class="headerlink" href="#pythonsearch_indexpy" title="Permanent link">&para;</a></h5>
 <p>Mac目录为<br />
 /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/mkdocs/contrib/search/，修改generate_search_index<br />
-，Windows系统参考相对路径</p>
-<div class="codehilite"><pre><span></span><code>    <span class="k">def</span> <span class="nf">generate_search_index</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+，Windows系统参考相对路径
+<div class="highlight"><pre><span></span><code>    <span class="k">def</span> <span class="nf">generate_search_index</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;python to json conversion&quot;&quot;&quot;</span>
         <span class="n">page_dicts</span> <span class="o">=</span> <span class="p">{</span>
             <span class="s1">&#39;docs&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_entries</span><span class="p">,</span>
@@ -466,18 +466,14 @@
 
         <span class="k">return</span> <span class="n">data</span>
 </code></pre></div>
-
-
-<div class="codehilite"><pre><span></span><code><span class="c1"># 在文件开始位置插入import语句</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># 在文件开始位置插入import语句</span>
 <span class="kn">import</span> <span class="nn">jieba</span>
-</code></pre></div>
-
-
+</code></pre></div></p>
 <h5 id="lunrjs">修改lunr.js<a class="headerlink" href="#lunrjs" title="Permanent link">&para;</a></h5>
 <p>Mac目录为<br />
 /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/mkdocs/contrib/search/templates/search/<br />
 搜索lunr.Builder.prototype.add替换部分代码</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// 仅替换前15行</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// 仅替换前15行</span>
 <span class="nx">lunr</span><span class="p">.</span><span class="nx">Builder</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">add</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">doc</span><span class="p">,</span> <span class="nx">attributes</span><span class="p">)</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">docRef</span> <span class="o">=</span> <span class="nx">doc</span><span class="p">[</span><span class="k">this</span><span class="p">.</span><span class="nx">_ref</span><span class="p">],</span>
       <span class="nx">fields</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_fields</span><span class="p">)</span>
@@ -495,16 +491,13 @@
         <span class="nx">fieldTerms</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
 </code></pre></div>
 
-
-<p>搜索定位替换以下部分</p>
-<div class="codehilite"><pre><span></span><code><span class="nx">lunr</span><span class="p">.</span><span class="nx">trimmer</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">token</span><span class="p">)</span> <span class="p">{</span>
+<p>搜索定位替换以下部分
+<div class="highlight"><pre><span></span><code><span class="nx">lunr</span><span class="p">.</span><span class="nx">trimmer</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">token</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">return</span> <span class="nx">token</span><span class="p">.</span><span class="nx">update</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="nx">s</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/^\s+/</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\s+$/</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
   <span class="p">})</span>
 <span class="p">}</span>
-</code></pre></div>
-
-
+</code></pre></div></p>
 <h3 id="mkdocs">通过MKDocs更新文档<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h3>
 <ul>
 <li>使用命令 <code>git clone https://github.com/Yaluoo/docs-LowCodePlatform.git</code> 克隆资源库</li>
