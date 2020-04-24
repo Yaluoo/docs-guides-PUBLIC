@@ -42,4 +42,4 @@ markdown_extensions:
 
 
 nav:
-    - 项目文档: contents/docsdev.md
+    - 项目文档管理工具: contents/docsdev.md
