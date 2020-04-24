@@ -43,4 +43,6 @@ markdown_extensions:
 
 nav:
     - 项目文档管理工具: contents/docsdev.md
-    - Markdown语法: contents/markdown_syntax.md
+    - Markdown语法: 
+        - 基本语法: assets/markdown_syntax/README.md        
+        - emoji图标: assets/markdown_syntax/emoji.md

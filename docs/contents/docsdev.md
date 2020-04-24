@@ -1,4 +1,6 @@
-# 创世项目文档
+# 创世项目文档管理
+
+*添加中文支持和图片放大显示参考[基于mkdocs-material实现的帮助中心(markdown + 中文搜索 + 图片放大)](https://segmentfault.com/a/1190000018592279?utm_source=tag-newest)*修复部分原文错误
 
 ### 准备
 * [下载](https://desktop.github.com)安装Github Desktop
@@ -55,6 +57,10 @@ Mac目录为
                 log.warning('Failed to pre-build search index. Error: {}'.format(e))
 
         return data
+```
+``` py
+# 在文件开始位置插入import语句
+import jieba
 ```
 
 ##### 修改lunr.js
