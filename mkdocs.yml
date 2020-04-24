@@ -1,1 +1,48 @@
-site_name: 指导手册
+dev_addr: localhost:9010
+
+site_name: 亚鹿项目职到手册
+site_author: 亚鹿信息
+copyright: 版权所有 © [亚鹿信息](https://yaluoo.com)
+
+repo_name: docs-guides
+repo_url: https://github.com/Yaluoo/docs-guides.git
+
+theme: 
+    name: 'material'
+    language: 'zh'
+    favicon: ' '
+    logo:
+    icon: ' '
+    palette:
+        primary: 'black'
+        accent: 'deep orange'
+        
+# 自定义css
+extra_css:
+- 'assets/css/custom.css'
+- 'assets/css/simpleLightbox.min.css'
+# 自定义js
+extra_javascript:
+- 'assets/js/jquery-3.5.0.min.js'
+- 'assets/js/simpleLightbox.min.js'
+- 'assets/js/custom.js'
+
+plugins:
+    - search
+
+# 一些扩展
+markdown_extensions:
+- markdown.extensions.attr_list
+- admonition
+- codehilite:
+    guess_lang: false
+    linenums: false
+- toc:
+    permalink: true
+- footnotes
+- meta
+- def_list
+
+
+nav:
+    - 项目文档: contents/docsdev.md
