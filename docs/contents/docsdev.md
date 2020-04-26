@@ -12,7 +12,10 @@
 * 使用命令 `pip install jieba` 安装解霸
 
 #### 添加中文支持
-##### 进入python的安装目录修改search_index.py文件
+##### 方法一：直接通过插件方式安装
+打开vscode后，左侧竖着的导航栏最底下的图标就是VS Code的插件市场，在插件市场的搜索框里搜索“Chinese”，第一个结果就是中文语言包
+
+##### 方法二：进入python的安装目录修改search_index.py文件
 Mac目录为  
 /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/mkdocs/contrib/search/，修改generate_search_index  
 ，Windows系统参考相对路径
@@ -96,7 +99,7 @@ lunr.trimmer = function (token) {
 }
 ```
 
-
+[base64str]:data:image/png;base64,iVBORw0......
 
 ### 通过MKDocs更新文档
 
