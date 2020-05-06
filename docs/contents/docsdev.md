@@ -2,7 +2,8 @@
 
 *添加中文支持和图片放大显示参考[基于mkdocs-material实现的帮助中心(markdown + 中文搜索 + 图片放大)](https://segmentfault.com/a/1190000018592279?utm_source=tag-newest)*修复部分原文错误
 
-### 准备
+## 准备
+
 * [下载](https://desktop.github.com)安装Github Desktop
 * [下载](https://www.python.org/downloads)安装Python
 * [下载](https://code.visualstudio.com)安装VS Code
@@ -11,12 +12,14 @@
 * 使用命令 `pip install mkdocs-material` 安装mkdocs-material
 * 使用命令 `pip install jieba` 安装解霸
 
-#### 添加中文支持
+### 添加中文支持
 
-##### 进入python的安装目录修改search_index.py文件
+#### 进入python的安装目录修改search_index.py文件
+
 Mac目录为  
 /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/mkdocs/contrib/search/，修改generate_search_index  
 ，Windows系统参考相对路径
+
 ``` py
     def generate_search_index(self):
         """python to json conversion"""
@@ -59,12 +62,14 @@ Mac目录为
 
         return data
 ```
+
 ``` py
 # 在文件开始位置插入import语句
 import jieba
 ```
 
-##### 修改lunr.js
+#### 修改lunr.js
+
 Mac目录为  
 /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/mkdocs/contrib/search/templates/search/  
 搜索lunr.Builder.prototype.add替换部分代码
@@ -89,6 +94,7 @@ lunr.Builder.prototype.add = function (doc, attributes) {
 ```
 
 搜索定位替换以下部分
+
 ``` js
 lunr.trimmer = function (token) {
   return token.update(function (s) {
@@ -99,14 +105,13 @@ lunr.trimmer = function (token) {
 
 [base64str]:data:image/png;base64,iVBORw0......
 
-### 通过MKDocs更新文档
+## 通过MKDocs更新文档
 
 * 使用命令 `git clone https://github.com/Yaluoo/docs-LowCodePlatform.git` 克隆资源库
 * 使用VS Code编辑文档
 * 使用Github Desktop提交变更
 
-
-### 使用MKDocs
+## 使用MKDocs
 
 * 打开命令行将目录切换至文档所在目录
 * 本地运行 `mkdocs serve`
