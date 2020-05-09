@@ -107,7 +107,7 @@ lunr.trimmer = function (token) {
 
 ## 通过MKDocs更新文档
 
-* 使用命令 `git clone https://github.com/Yaluoo/docs-LowCodePlatform.git` 克隆资源库
+* 使用命令 `git clone https://github.com/Yaluoo/docs-LowCodePlatform-Private.git` 克隆资源库
 * 使用VS Code编辑文档
 * 使用Github Desktop提交变更
 
