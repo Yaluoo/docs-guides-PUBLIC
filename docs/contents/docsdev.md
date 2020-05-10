@@ -8,6 +8,7 @@
 * [下载](https://www.python.org/downloads)安装Python
 * [下载](https://code.visualstudio.com)安装VS Code
 * 通过 `pip install --upgrade pip` 更新Python安装工具（Mac OS使用 `pip3`），如果出现*No module named 'pip' error*错误，通过命令 `python -m ensurepip` 修复
+* 使用命令 `pip install wheel` 安装wheel
 * 使用命令 `pip install mkdocs` 安装MKDocs
 * 使用命令 `pip install mkdocs-material` 安装mkdocs-material
 * 使用命令 `pip install jieba` 安装解霸
