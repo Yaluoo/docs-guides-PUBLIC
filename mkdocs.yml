@@ -1,8 +1,11 @@
 dev_addr: localhost:9011
 
-site_name: 亚鹿项目手册
+site_name: 亚鹿项目技术Wiki
 site_author: 亚鹿信息
 copyright: 版权所有 © [亚鹿信息](https://yaluoo.com)
+
+repo_name: Yaluoo/docs-guides-PUBLIC
+repo_url: https://github.com/Yaluoo/docs-guides-PUBLIC
 
 theme: 
     name: 'material'
