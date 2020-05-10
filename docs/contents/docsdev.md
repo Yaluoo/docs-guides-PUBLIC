@@ -117,3 +117,4 @@ lunr.trimmer = function (token) {
 * 打开命令行将目录切换至文档所在目录
 * 本地运行 `mkdocs serve`
 * 更新网页 `mkdocs gh-deploy`
+* 测试
