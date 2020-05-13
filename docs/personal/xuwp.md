@@ -7,7 +7,7 @@
     * 数据字段表：ZTDATAFIELDS
     * 字段组表：ZTFIELDGROUP
     * 值列表：ZTVALUELIST
-2. 研究源码
+2. 研究源码，看笔记
 
 > 问题
 1. 源码含义
